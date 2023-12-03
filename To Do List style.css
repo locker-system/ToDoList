@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Harrington';
+    box-sizing: border-box;
+    font-size: 40px;
+}
+body{
+    background: url(gothic-lolita-kuromi-desktop-wallpaper-kawaii-hoshi.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80vh;
+}
+.todo-list{
+    width: 100%;
+    max-width: 540px;
+    background: #fff ;
+    margin-left: 500px;
+    border-radius: 10px;
+    padding: 40px 30px 70px;
+    margin: 100px auto 20px;
+}
+.todo-list .todo{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+.todo-list h2{
+    color: black;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.todo-list img{
+    width: 80px;
+    margin-left: 10px;
+    padding: 12px 8px 12px 8px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(237, 204, 244);
+    border-radius: 20px;
+    padding-left: 20px;
+    margin-bottom: 25px ;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 17px;
+}
+input::placeholder{
+    color: black;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: rgb(89, 44, 98) ;
+    color: #fff ;
+    font-size: 17px ;
+    cursor: pointer;
+    border-radius: 20px;
+}
+ul li{
+    font-size: 18px;
+    list-style: none;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    height: 28px;
+    width: 28px;
+    position: absolute;
+    border-radius: 50%;
+    background-image: url(Capture.JPG);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+ul li.checked{
+    color: rgb(130, 51, 130);
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(hello-kitty-my-melody-kuromi-sanrio-others.jpg);
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    color: rgb(40, 29, 40);
+    line-height: 40px;
+    text-align: center;
+    border-radius: 25%;
+}
+ul li span:hover{
+    background: rgb(133, 94, 133);
+}
